@@ -1,9 +1,9 @@
-package sef.module6.sample;
+package sample;
 
 /* Student_I class is the sub class of Person class
  * Attributes : school, grade
  */
-public class Student_I extends Person_I {
+public class Student_I  {
 
 	//Attributes
 	private int grade;
@@ -18,6 +18,7 @@ public class Student_I extends Person_I {
 	public int getGrade() {
 		return grade;
 	}
+
 	
 	// setter for int grade
 	public void setGrade(int grade) {
