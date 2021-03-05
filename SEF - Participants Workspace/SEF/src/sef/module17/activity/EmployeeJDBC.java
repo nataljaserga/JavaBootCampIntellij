@@ -1,4 +1,4 @@
-package sef.module17.activity;
+package activity;
 //Needs to be completed
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,7 +8,14 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class EmployeeJDBC {
+	Employee emp = new Employee();
 
+	public static void main(String[] args) {
+		Connection con = createConnection();
+		Employee e1 = new Employee();
+		e1 = findEmployeeById(2);
+		System.out.println(e1.getForstName());
+	}
 	public Connection createConnection()
 	{
 		Connection con=null;
